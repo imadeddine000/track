@@ -1,0 +1,337 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    font-weight: bold;
+    scroll-behavior: smooth;
+    text-decoration: none;
+
+}
+header{
+    height: 100vh;
+    position: relative;
+}
+.app_bar {
+    background-color: #3DDC97;
+    padding: 0px 20px 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    box-shadow: #3DDC97 1px 1px 20px ;
+  
+
+}
+a{
+    color: black;
+}
+a:hover{
+    color: white;
+}
+.app_bar_links{
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: space-between;
+    color: black;
+}
+.app_bar_links li:hover{
+    color: white;
+    cursor: pointer;
+}
+.app_bar_logo{
+    font-size: 30px;
+    width: 80%;
+}
+.action_section{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./claudio-schwarz-q8kR_ie6WnI-unsplash.jpg);
+    background-repeat: none;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.action_work input ,button{
+    outline: none;
+    padding: 20px 40px 20px 40px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    
+}
+.action_work button{
+    background-color: #3DDC97;
+    cursor: pointer;
+}
+.learn_more{
+    position: absolute;
+    margin-top: -40px;
+    right: 32rem;
+    z-index: 5;
+}
+.learn_more button{
+    border-radius: 30px;
+    padding: 20px 80px 20px 80px;
+    cursor: pointer;
+    background-color: #3DDC97;
+    font-size: 25px;
+    font-weight: bold;
+}
+.learn_more button:hover{
+    box-shadow: 1px 1px 20px rgb(165, 165, 165);
+}
+.page2{
+    height: 120vh;
+    background-image: url(./brett-jordan-phUtWl8RyFE-unsplash.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    
+    
+}
+.cards{
+    
+    grid-gap: 10px;
+    background-color: #3DDC97;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: auto;
+    overflow: hidden;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    
+}
+.cards .card{
+    background-color: white;
+    width: 300px;
+    height: 150px;
+    border-radius: 6px;
+    position: relative;
+    border: 10px solid white;
+    box-shadow: 3px 3px 3px rgba(0, 0 , 0, 0.3);
+}
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2px; 
+    cursor: pointer;
+}
+.card span {
+    position: absolute;
+    bottom:2px;
+    z-index: 5;
+    color: white;
+    right: 60px;
+    font-weight: bold;
+    text-shadow: 1px 1px black;
+   
+}
+.contact{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.contact h1{
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 1px .5px grey;
+    text-align: center;
+}
+.contact form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #3DDC97;
+    width: fit-content;
+    padding: 20px;
+    border: 1px solid grey;
+    box-shadow: 3px 3px 3px rgba(0, 0 , 0, 0.1);
+}
+.contact .personale_info{
+    
+    padding: 20px;
+    border: 1px solid grey;
+}
+.personale_info input{
+    padding:10px 20px 10px 20px;
+    outline:none;
+    border-radius: 6px;
+    border: 1px solid grey;
+}
+.msg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    width: 90%;
+    border: 1px solid grey;
+    margin: 15px;
+}
+.msg input{
+    padding: 10px 0px 10px 0px;
+    outline: none;
+    border: 1px solid grey;
+    border-radius: 6px;
+    margin: 5px;
+    width: 100%;
+    font-size: 15px;
+    font-weight: bold;
+}
+textarea{
+    width: 100%;
+    border: 1px solid grey;
+    outline: none;
+    border-radius: 6px;
+}
+.msg input:focus{
+    outline-color: #3DDC97;
+    outline-width: 2px;
+}
+.top{
+    background-color: #3DDC97;
+    padding: 10px 16px;
+    border-radius: 50px;
+    width: fit-content;
+    margin:0px 20px 20px 0px;
+    float: right;
+    box-shadow: 3px 3px 3px rgba(0, 0 , 0, 0.3);
+    z-index: 10;
+}
+.submit button{
+    padding: 10px 20px 10px 20px;
+
+}
+@media  screen and (max-width:375px){
+   
+    .app_bar_links li{
+        padding: 5px;
+    }
+    .app_bar_links{
+        padding: 0;
+        margin: 0;
+    }
+    .app_bar{
+        flex-direction: column;
+    }
+    .app_bar_logo{
+        text-align: center;
+        border-bottom: 1px solid grey;
+    }
+    
+    .action_section .action_work input,button{
+       padding: 15px;
+    }
+    .action_work{
+        align-items: center;
+        justify-content: center;
+    }
+    .learn_more{
+        display: none;
+
+    }
+    .cards{
+        grid-template-columns: 100%;
+        margin-top: 50px;
+    }
+    .cards .card{
+        width:70%;
+        height: 100px;
+    }
+}
+@media screen and (max-width:660px){
+    .app_bar{
+        flex-direction: column;
+    }
+    .app_bar_logo{
+        text-align: center;
+    }
+    .app_bar_links li{
+        padding: 5px;
+    }
+
+    .action_section .action_work input,button{
+        padding: 20px;
+     }
+     .action_work{
+         align-items: center;
+         justify-content: center;
+     }
+     .learn_more{
+         display: none;
+ 
+     }
+     .cards{
+         grid-template-columns: 1fr 1fr;
+         margin-top: 50px;
+     }
+     .cards .card{
+         width:80%;
+         height: 100px;
+     }
+
+}
+@media screen and (max-width:760px){
+    .app_bar{
+        flex-direction: column;
+    }
+    .app_bar_logo{
+        text-align: center;
+    }
+    .app_bar_links li{
+        padding: 5px;
+    }
+
+    .action_section .action_work input,button{
+        padding: 20px;
+     }
+     .action_work{
+         align-items: center;
+         justify-content: center;
+     }
+     .learn_more{
+         display: none;
+ 
+     }
+     .cards{
+         grid-template-columns: 1fr 1fr;
+         margin-top: 50px;
+     }
+     
+
+}
+@media screen and (max-width:1200px){
+    .app_bar{
+        flex-direction: column;
+    }
+    .app_bar_logo{
+        text-align: center;
+    }
+    .app_bar_links li{
+        padding: 5px;
+    }
+
+    .action_section .action_work input,button{
+        padding: 20px;
+     }
+     .action_work{
+         align-items: center;
+         justify-content: center;
+     }
+     .learn_more{
+         display: none;
+ 
+     }
+     .cards{
+         grid-template-columns: 1fr 1fr;
+         margin-top: 50px;
+     }
+    }
